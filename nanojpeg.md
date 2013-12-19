@@ -1,6 +1,6 @@
 ---
 project: nanojpeg
-tagline: nanojpeg Lua+ffi binding
+tagline: nanojpeg ffi binding
 ---
 
 v1.0 | NanoJPEG 1.3 modified | LuaJIT 2
@@ -13,7 +13,7 @@ A ffi binding of [NanoJPEG], a very small JPEG decoder suitable for embedded app
 
   * no support for arithmetic coding (rarely used)
   * no support for progressive jpeg (not-so-rarely used)
-  * slow (compared to [libjpeg-turbo])
+  * slow (compared to [libjpeg-turbo](libjpeg.html))
   * no option to only read the headers
 
 ## `nanojpeg.load(t) -> image`
@@ -28,13 +28,12 @@ Read and decode a JPEG image.
 
 The returned image object is a table with the fields:
 
-    * `data`, `size`, `format`, `stride`, `w`, `h`: image format, data and dimensions.
-       * depending on the input file, the format can be either `rgb8` or `g8`,
-		    that is 24bit RGB or 8bit gray; use [bitmap] to convert to other formats.
+  * `data`, `size`, `format`, `stride`, `w`, `h`: image format, data and dimensions.
+    * depending on the input file, the format can be either `rgb8` or `g8`,
+	   that is 24bit RGB or 8bit gray; use [bitmap](bitmap.html) to convert to other formats.
 
 ----
-See also: [libjpeg], [imagefile].
+See also: [libjpeg](libjpeg.html)
 
-[NanoJPEG]:       http://keyj.emphy.de/nanojpeg/
-[libjpeg-turbo]:  libjpeg.html
-[bitmap]:         bitmap.html
+
+[NanoJPEG]:  http://keyj.emphy.de/nanojpeg/
