@@ -1,6 +1,7 @@
 ---
-project: nanojpeg
-tagline: nanojpeg ffi binding
+project:     nanojpeg
+tagline:     nanojpeg ffi binding
+category:    Raster Images
 ---
 
 v1.0 | NanoJPEG 1.3 modified | LuaJIT 2
