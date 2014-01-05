@@ -4,8 +4,6 @@ tagline:     nanojpeg ffi binding
 category:    Raster Images
 ---
 
-v1.0 | NanoJPEG 1.3 modified | LuaJIT 2
-
 ## `local nanojpeg = require'nanojpeg'`
 
 A ffi binding of [NanoJPEG][nanojpeg lib], a very small JPEG decoder suitable for embedded applications.
