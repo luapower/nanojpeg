@@ -27,12 +27,12 @@ local error_messages = {
 
 local function load(t)
 	local data, sz
-	if t.string then
+	if type(t) == 'string' or t.path then
+		data, sz = stdio.readfile(t)
+	elseif t.string then
 		data, sz = t.string, #t.string
 	elseif t.cdata then
 		data, sz = t.cdata, t.size
-	elseif t.path then
-		data, sz = stdio.readfile(t.path)
 	else
 		error'source missing'
 	end

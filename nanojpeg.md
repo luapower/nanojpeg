@@ -15,7 +15,7 @@ A ffi binding of [NanoJPEG][nanojpeg lib], a very small JPEG decoder suitable fo
   * slow (compared to [libjpeg-turbo][libjpeg])
   * no option to only read the headers
 
-## `nanojpeg.load(t) -> image`
+## `nanojpeg.load(path | t) -> image`
 
 Read and decode a JPEG image.
 
