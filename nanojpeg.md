@@ -1,7 +1,6 @@
 ---
 project:     nanojpeg
 tagline:     nanojpeg ffi binding
-category:    Raster Images
 ---
 
 ## `local nanojpeg = require'nanojpeg'`
