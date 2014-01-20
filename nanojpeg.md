@@ -1,6 +1,6 @@
 ---
-project:     nanojpeg
-tagline:     nanojpeg ffi binding
+project: nanojpeg
+tagline: JPEG reader
 ---
 
 ## `local nanojpeg = require'nanojpeg'`
