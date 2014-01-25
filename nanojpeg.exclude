@@ -1,0 +1,12 @@
+*
+!/bin/
+!/csrc/
+!/bin/mingw32/
+!/bin/linux32/
+!/media/
+
+!/nanojpeg*
+!/bin/mingw32/nanojpeg*
+!/bin/linux32/libnanojpeg*
+!/csrc/nanojpeg/
+!/csrc/nanojpeg/**
