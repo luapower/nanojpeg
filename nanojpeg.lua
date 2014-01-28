@@ -27,8 +27,10 @@ local error_messages = {
 
 local function load(t)
 	local data, sz
-	if type(t) == 'string' or t.path then
+	if type(t) == 'string' then
 		data, sz = stdio.readfile(t)
+	elseif t.path then
+		data, sz = stdio.readfile(t.path)
 	elseif t.string then
 		data, sz = t.string, #t.string
 	elseif t.cdata then
