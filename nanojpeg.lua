@@ -1,4 +1,7 @@
---nanojpeg2 binding, see csrc/nanojpeg
+
+--nanojpeg2 binding (see csrc/nanojpeg).
+--Written by Cosmin Apreutesei. Public Domain.
+
 local ffi = require'ffi'
 local glue = require'glue'
 local stdio = require'stdio'
