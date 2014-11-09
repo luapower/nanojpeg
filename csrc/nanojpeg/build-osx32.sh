@@ -1,1 +1,2 @@
-gcc -arch i386 -O2 nanojpeg2.c -shared -install_name @loader_path/libnanojpeg.dylib -o ../../bin/osx32/libnanojpeg2.dylib -DNJ_USE_LIBC -std=c99 -Wall -Wextra -pedantic -Werror
+P=osx32 C="-arch i386" L="-arch i386 -install_name @loader_path/libnanojpeg2.dylib" \
+	D=libnanojpeg2.dylib A=libnanojpeg2.a ./build.sh

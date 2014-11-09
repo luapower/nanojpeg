@@ -1,1 +1,1 @@
-gcc -O2 -s -static-libgcc nanojpeg2.c -shared -o ../../bin/linux32/libnanojpeg2.so -DNJ_USE_LIBC -std=c99 -Wall -Wextra -pedantic -Werror
+P=linux32 L="-s -static-libgcc" D=libnanojpeg2.so A=libnanojpeg2.a ./build.sh

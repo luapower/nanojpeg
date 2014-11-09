@@ -1,1 +1,1 @@
-gcc -O2 -s -static-libgcc nanojpeg2.c -shared -o ../../bin/mingw64/nanojpeg2.dll -DNJ_USE_LIBC -std=c99 -Wall -Wextra -pedantic -Werror
+P=mingw64 L="-s -static-libgcc" D=nanojpeg2.dll A=nanojpeg2.a ./build.sh
