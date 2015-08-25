@@ -1,5 +1,4 @@
 ---
-project: nanojpeg
 tagline: JPEG reader
 ---
 
